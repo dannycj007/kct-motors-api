@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "steerings",
+  "info": {
+    "singularName": "steering",
+    "pluralName": "steerings",
+    "displayName": "Steering",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Steering": {
+      "type": "string"
+    },
+    "vehicles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::vehicle.vehicle",
+      "mappedBy": "steering"
+    }
+  }
+}

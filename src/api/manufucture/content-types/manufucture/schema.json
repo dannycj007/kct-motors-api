@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "manufuctures",
+  "info": {
+    "singularName": "manufucture",
+    "pluralName": "manufuctures",
+    "displayName": "Manufucture",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "vehicles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::vehicle.vehicle",
+      "mappedBy": "manufucture"
+    }
+  }
+}

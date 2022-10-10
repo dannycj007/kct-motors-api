@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "type_of_vehicles",
+  "info": {
+    "singularName": "type-of-vehicle",
+    "pluralName": "type-of-vehicles",
+    "displayName": "Type of Vehicle",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "vehicles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::vehicle.vehicle",
+      "mappedBy": "type_of_vehicle"
+    }
+  }
+}

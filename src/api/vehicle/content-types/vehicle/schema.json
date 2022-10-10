@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vehicles",
+  "info": {
+    "singularName": "vehicle",
+    "pluralName": "vehicles",
+    "displayName": "Vehicle",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "manufucture": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::manufucture.manufucture",
+      "inversedBy": "vehicles"
+    },
+    "type_of_vehicle": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::type-of-vehicle.type-of-vehicle",
+      "inversedBy": "vehicles"
+    },
+    "steering": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::steering.steering",
+      "inversedBy": "vehicles"
+    }
+  }
+}

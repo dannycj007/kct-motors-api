@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "years",
+  "collectionName": "doors",
   "info": {
-    "singularName": "year",
-    "pluralName": "years",
-    "displayName": "YearFrom",
+    "singularName": "door",
+    "pluralName": "doors",
+    "displayName": "Door",
     "description": ""
   },
   "options": {
@@ -12,8 +12,8 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "yearFrom": {
-      "type": "string"
+    "door": {
+      "type": "integer"
     }
   }
 }

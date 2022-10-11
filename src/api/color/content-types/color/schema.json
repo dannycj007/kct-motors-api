@@ -1,18 +1,17 @@
 {
   "kind": "collectionType",
-  "collectionName": "years",
+  "collectionName": "colors",
   "info": {
-    "singularName": "year",
-    "pluralName": "years",
-    "displayName": "YearFrom",
-    "description": ""
+    "singularName": "color",
+    "pluralName": "colors",
+    "displayName": "Color"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "yearFrom": {
+    "Color": {
       "type": "string"
     }
   }

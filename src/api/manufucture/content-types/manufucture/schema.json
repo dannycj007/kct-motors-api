@@ -4,7 +4,7 @@
   "info": {
     "singularName": "manufucture",
     "pluralName": "manufuctures",
-    "displayName": "Manufucture",
+    "displayName": "Manufacture",
     "description": ""
   },
   "options": {
@@ -20,6 +20,11 @@
       "relation": "oneToMany",
       "target": "api::vehicle.vehicle",
       "mappedBy": "manufucture"
+    },
+    "models": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::model.model"
     }
   }
 }

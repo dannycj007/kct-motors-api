@@ -1,18 +1,17 @@
 {
   "kind": "collectionType",
-  "collectionName": "years",
+  "collectionName": "chasis_numbers",
   "info": {
-    "singularName": "year",
-    "pluralName": "years",
-    "displayName": "YearFrom",
-    "description": ""
+    "singularName": "chasis-number",
+    "pluralName": "chasis-numbers",
+    "displayName": "Chasis number"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "yearFrom": {
+    "chasisnumber": {
       "type": "string"
     }
   }

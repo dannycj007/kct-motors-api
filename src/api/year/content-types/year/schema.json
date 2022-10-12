@@ -14,6 +14,12 @@
   "attributes": {
     "yearFrom": {
       "type": "string"
+    },
+    "vehicles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::vehicle.vehicle",
+      "mappedBy": "year_from"
     }
   }
 }

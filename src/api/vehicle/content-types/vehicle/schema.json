@@ -32,6 +32,55 @@
       "relation": "manyToOne",
       "target": "api::steering.steering",
       "inversedBy": "vehicles"
+    },
+    "year_from": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::year.year",
+      "inversedBy": "vehicles"
+    },
+    "image_car": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Chassis_number": {
+      "type": "string"
+    },
+    "Engine": {
+      "type": "string"
+    },
+    "doors": {
+      "type": "integer"
+    },
+    "Color": {
+      "type": "string"
+    },
+    "Price": {
+      "type": "float"
+    },
+    "Seats": {
+      "type": "integer"
+    },
+    "Mileage": {
+      "type": "float"
+    },
+    "Features": {
+      "type": "richtext"
+    },
+    "test": {
+      "type": "enumeration",
+      "enum": [
+        "morning",
+        "evening",
+        "lunch"
+      ]
     }
   }
 }

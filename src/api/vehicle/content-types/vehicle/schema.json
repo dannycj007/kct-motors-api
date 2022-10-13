@@ -73,14 +73,6 @@
     },
     "Features": {
       "type": "richtext"
-    },
-    "test": {
-      "type": "enumeration",
-      "enum": [
-        "morning",
-        "evening",
-        "lunch"
-      ]
     }
   }
 }

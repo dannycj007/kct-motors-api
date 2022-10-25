@@ -83,6 +83,18 @@
       ],
       "type": "media",
       "multiple": false
+    },
+    "fuel_types": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::fuel-type.fuel-type",
+      "mappedBy": "vehicle"
+    },
+    "transmissions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::transmission.transmission",
+      "mappedBy": "vehicle"
     }
   }
 }

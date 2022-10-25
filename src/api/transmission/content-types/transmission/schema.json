@@ -14,6 +14,12 @@
   "attributes": {
     "Transmission": {
       "type": "string"
+    },
+    "vehicle": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::vehicle.vehicle",
+      "inversedBy": "transmissions"
     }
   }
 }

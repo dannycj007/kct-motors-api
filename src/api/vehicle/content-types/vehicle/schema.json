@@ -95,6 +95,24 @@
       "relation": "oneToMany",
       "target": "api::transmission.transmission",
       "mappedBy": "vehicle"
+    },
+    "orders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::order.order",
+      "mappedBy": "vehicle"
+    },
+    "invoices": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::invoice.invoice",
+      "mappedBy": "vehicle"
+    },
+    "inquiries": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::inquirie.inquirie",
+      "mappedBy": "vehicle"
     }
   }
 }

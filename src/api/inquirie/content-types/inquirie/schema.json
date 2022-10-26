@@ -4,7 +4,8 @@
   "info": {
     "singularName": "inquirie",
     "pluralName": "inquiries",
-    "displayName": "Inquirie"
+    "displayName": "Inquirie",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,6 +16,36 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::vehicle.vehicle",
+      "inversedBy": "inquiries"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "inquiries"
+    },
+    "manufuctures": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::manufucture.manufucture",
+      "mappedBy": "inquiry"
+    },
+    "year_froms": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::year.year",
+      "mappedBy": "inquirie"
+    },
+    "steerings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::steering.steering",
+      "mappedBy": "inquirie"
+    },
+    "order": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::order.order",
       "inversedBy": "inquiries"
     }
   }

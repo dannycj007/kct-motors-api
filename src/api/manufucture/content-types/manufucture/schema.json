@@ -31,12 +31,6 @@
       "relation": "oneToMany",
       "target": "api::model.model",
       "mappedBy": "model"
-    },
-    "inquiry": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::inquirie.inquirie",
-      "inversedBy": "manufuctures"
     }
   }
 }

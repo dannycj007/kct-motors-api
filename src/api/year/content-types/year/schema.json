@@ -20,12 +20,6 @@
       "relation": "oneToMany",
       "target": "api::vehicle.vehicle",
       "mappedBy": "year_from"
-    },
-    "inquirie": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::inquirie.inquirie",
-      "inversedBy": "year_froms"
     }
   }
 }

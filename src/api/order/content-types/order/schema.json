@@ -26,12 +26,6 @@
       "relation": "oneToOne",
       "target": "api::invoice.invoice",
       "mappedBy": "order"
-    },
-    "inquiries": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::inquirie.inquirie",
-      "mappedBy": "order"
     }
   }
 }

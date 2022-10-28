@@ -20,12 +20,6 @@
       "relation": "oneToMany",
       "target": "api::vehicle.vehicle",
       "mappedBy": "steering"
-    },
-    "inquirie": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::inquirie.inquirie",
-      "inversedBy": "steerings"
     }
   }
 }

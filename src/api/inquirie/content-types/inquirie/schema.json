@@ -23,30 +23,6 @@
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "inquiries"
-    },
-    "manufuctures": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::manufucture.manufucture",
-      "mappedBy": "inquiry"
-    },
-    "year_froms": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::year.year",
-      "mappedBy": "inquirie"
-    },
-    "steerings": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::steering.steering",
-      "mappedBy": "inquirie"
-    },
-    "order": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::order.order",
-      "inversedBy": "inquiries"
     }
   }
 }

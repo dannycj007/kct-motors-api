@@ -71,18 +71,16 @@
     "Mileage": {
       "type": "float"
     },
-    "Features": {
-      "type": "richtext"
-    },
     "single_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "fuel_types": {
       "type": "relation",
@@ -113,6 +111,11 @@
       "relation": "oneToMany",
       "target": "api::inquirie.inquirie",
       "mappedBy": "vehicle"
+    },
+    "car_features": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::car-feature.car-feature"
     }
   }
 }

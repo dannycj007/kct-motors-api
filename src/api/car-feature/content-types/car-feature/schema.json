@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "car_features",
+  "info": {
+    "singularName": "car-feature",
+    "pluralName": "car-features",
+    "displayName": "CarFeature",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "carfeature": {
+      "type": "string"
+    }
+  }
+}
